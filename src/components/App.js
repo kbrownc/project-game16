@@ -12,6 +12,7 @@ const App = () => {
   const handleClick = (i) => {
     const historyPoint = history.slice(0, stepNumber + 1);
     const current = historyPoint[stepNumber];
+    // Using ... to copy an array
     const squares = [...current];
     // return if won or occupied
     if (winner || squares[i]) return;
@@ -39,7 +40,7 @@ const App = () => {
 
   return (
     <>
-      <h1>React Tic Tac Toe - With Hooks</h1>
+      <h1>Tic Tac Toe - vs Computer</h1>
       <Board squares={history[stepNumber]} onClick={handleClick} />
       <div className="info-wrapper">
         <div>
