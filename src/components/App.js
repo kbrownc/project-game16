@@ -40,7 +40,7 @@ const App = () => {
 
   return (
     <>
-      <h1>Tic Tac Toe - vs Computer</h1>
+      <h1>Tic Tac Toe - You vs Computer</h1>
       <Board squares={history[stepNumber]} onClick={handleClick} />
       <div className="info-wrapper">
         <div>

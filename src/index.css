@@ -18,14 +18,14 @@ body {
 }
 
 h1 {
-  margin: 2rem;
+  margin: 0.5rem;
 }
 
 .board {
   border: 1rem solid #ff652f;
   background: #ff652f;
-  width: 500px;
-  height: 500px;
+  width: 350px;
+  height: 350px;
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
   gap: 1rem;
