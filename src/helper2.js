@@ -10,14 +10,13 @@ export function calculateBlock(squares) {
     [0, 4, 8],
     [2, 4, 6],
   ];
+  let index;
   for (let i = 0; i < lines.length; i++) {
     const [a, b, c] = lines[i];
-    let index;
     const pattern = [squares[a], squares[b], squares[c]];
     if (pattern.filter(value => value === 'X').length === 2) {
-      console.log(pattern.filter(value => value === 'X').length);
       index = pattern.indexOf(null);
-      if (index !== -1) return index;
+      if (index !== -1) return lines[i][index];
     }
   }
   return null;

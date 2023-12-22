@@ -10,14 +10,13 @@ export function calculateAlmostWinner(squares) {
     [0, 4, 8],
     [2, 4, 6]
   ];
+  let index;
   for (let i = 0; i < lines.length; i++) {
-    const [a, b, c] = lines[i];
-    let index;
+    const [a, b, c] = lines[i];  
     const pattern = [squares[a], squares[b], squares[c]];
     if (pattern.filter((value) => value === 'O').length === 2) {
-      console.log(pattern.filter((value) => value === 'O').length)
       index = pattern.indexOf(null);
-      if (index !== -1) return index;
+      if (index !== -1) return lines[i][index];
     }
   }
   return null;
