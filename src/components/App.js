@@ -14,7 +14,9 @@ const App = () => {
     let squares = [...plays];
     if (winner || squares[i]) return;
     squares[i] = xO;
-    squares = calculateOturn(squares)
+    if (!calculateWinner(squares)) {
+      squares = calculateOturn(squares)
+    }
     setPlays(squares);
   };
 
