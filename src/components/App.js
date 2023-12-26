@@ -38,19 +38,6 @@ const App = () => {
     if (!board[4]) {
       board[4] = 'O'
       return board}
-    // 3 - take a corner square if available (choose randomly if more than 1)
-    if (!board[0]) {
-      board[0] = 'O'
-      return board}
-    if (!board[2]) {
-      board[2] = 'O'
-      return board}
-    if (!board[6]) {
-      board[6] = 'O'
-      return board}
-    if (!board[8]) {
-      board[8] = 'O'
-      return board}
     // 3 - take a side square if available (choose randomly if more than 1)
     if (!board[1]) {
       board[1] = 'O'
@@ -64,6 +51,20 @@ const App = () => {
     if (!board[7]) {
       board[7] = 'O'
       return board}
+      // 3 - take a corner square if available (choose randomly if more than 1)
+    if (!board[0]) {
+      board[0] = 'O'
+      return board}
+    if (!board[2]) {
+      board[2] = 'O'
+      return board}
+    if (!board[6]) {
+      board[6] = 'O'
+      return board}
+    if (!board[8]) {
+      board[8] = 'O'
+      return board}
+
     return board;
   };
 
